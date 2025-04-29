@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z M W - Senior Designer & Developer</title> <!-- Updated Title -->
+    <title>Z M W - Senior Designer & Developer</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Font Awesome (for specific icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Using a common CDN, check version -->
+    <!-- Font Awesome (for specific icons like Google) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet"> <!-- Added 900 weight -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
+     
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://github.com/Muggg78/ZMW-Zohaib-Mughal.git">
+    <!-- Removed incorrect GitHub CSS link -->
 </head>
 <body>
 
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand logo animate-on-scroll animate-fade-in" href="#">Z M W</a>
+            <a class="navbar-brand logo animate-on-scroll animate-fade-in" href="#">ZMW</a>
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -34,6 +38,8 @@
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                  
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testes">Testimonials</a></li>
@@ -79,21 +85,9 @@
         </div>
     </section>
 
-    <!-- Floating Icons (Removed Settings, Kept Chat) -->
-    <div class="floating-icon chat-icon">
-        <i class="bi bi-chat-right-text-fill"></i>
-    </div>
-    <!-- Floating Icons -->
-<div class="floating-icon whatsapp-icon">
-    <a href="https://wa.me/923440740774" target="_blank" aria-label="Chat on WhatsApp">
-       <i class="bi bi-whatsapp"></i>
-    </a>
-</div>
-<div class="floating-icon chat-icon">
-    <i class="bi bi-chat-right-text-fill"></i>
-</div>
     <!-- About Me Section -->
     <section id="about" class="about-section py-5 bg-white">
+        <p class="hjh services-label text-uppercase fw-bold mb-2 animate-on-scroll animate-slide-up">About me</p>
         <div class="container">
             <div class="row align-items-center justify-content-center gy-5 gy-lg-0">
                 <div class="col-lg-5 text-center">
@@ -119,42 +113,62 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+   <!-- Services Section -->
     <section id="services" class="services-section py-5">
         <div class="container">
             <div class="row align-items-center gy-5">
+                <!-- Left Column -->
                 <div class="col-lg-6">
                     <p class="services-label text-uppercase fw-bold mb-2 animate-on-scroll animate-slide-up">Services</p>
                     <h2 class="fw-bold mb-4 animate-on-scroll animate-slide-up" style="transition-delay: 100ms;">I offer a Full-cycle of Web<br>Development Services</h2>
                     <p class="text-muted mb-5 animate-on-scroll animate-slide-up" style="transition-delay: 200ms;">
-                        For more than 20 years our experts have been accomplishing enough with modern Web Development...
+                        For more than 20 years our experts have been accomplishing enough with modern Web Development, new generation programming language, and Full Stack developers to deliver cost-effective solutions.
                     </p>
                     <div class="skills-wrapper">
-                        <div class="skill-item mb-4 animate-on-scroll progress-bar-animation animate-slide-up" style="transition-delay: 300ms;">
-                            <div class="d-flex justify-content-between mb-1"><span class="skill-name">HTML & CSS</span><span class="skill-percent fw-medium">95%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                        <!-- Skill 1: HTML & CSS -->
+                        <div class="skill-item mb-4 animate-on-scroll animate-slide-up" style="transition-delay: 300ms;">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-percent fw-medium count-up" data-target="95">0%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div class="skill-item mb-4 animate-on-scroll progress-bar-animation animate-slide-up" style="transition-delay: 400ms;">
-                             <div class="d-flex justify-content-between mb-1"><span class="skill-name">JavaScript</span><span class="skill-percent fw-medium">80%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div></div>
+                        <!-- Skill 2: JavaScript -->
+                        <div class="skill-item mb-4 animate-on-scroll animate-slide-up" style="transition-delay: 400ms;">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent fw-medium count-up" data-target="80">0%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div class="skill-item mb-4 animate-on-scroll progress-bar-animation animate-slide-up" style="transition-delay: 500ms;">
-                             <div class="d-flex justify-content-between mb-1"><span class="skill-name">WordPress</span><span class="skill-percent fw-medium">90%</span></div>
-                            <div class="progress" style="height: 8px;"><div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                        <!-- Skill 3: WordPress -->
+                        <div class="skill-item mb-4 animate-on-scroll animate-slide-up" style="transition-delay: 500ms;">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span class="skill-name">WordPress</span>
+                                <span class="skill-percent fw-medium count-up" data-target="90">0%</span>
+                            </div>
+                            <div class="progress" style="height: 8px;">
+                                <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Right Column (Service Cards) -->
                 <div class="col-lg-6">
                     <div class="row g-4" data-stagger-children data-stagger-delay="150">
                         <div class="col-md-6">
                             <div class="service-card text-center p-4 bg-white rounded shadow-sm h-100 animate-stagger animate-scale-up">
-                                <i class="fa-brands fa-sketch service-icon mb-3"></i> <!-- Updated Icon -->
+                                <i class="fa-brands fa-sketch service-icon mb-3"></i>
                                 <h5 class="fw-bold mb-0">Design</h5>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="service-card text-center p-4 bg-white rounded shadow-sm h-100 animate-stagger animate-scale-up">
-                                <i class="fa-solid fa-code service-icon mb-3"></i> <!-- Updated Icon (Example: code) -->
+                                <i class="fa-solid fa-code service-icon mb-3"></i>
                                 <h5 class="fw-bold mb-0">Development</h5>
                             </div>
                         </div>
@@ -190,74 +204,136 @@
             <div class="row g-4 justify-content-center" data-stagger-children data-stagger-delay="100">
                 <div class="col-md-6 col-lg-4 animate-stagger animate-zoom-in">
                     <div class="portfolio-item position-relative overflow-hidden rounded shadow-sm">
-                        <img src="pexels-altman-5125366.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 1">
+                        <img src="6990247_3496219.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 1">
                     </div>
                 </div>
                  <div class="col-md-6 col-lg-4 animate-stagger animate-zoom-in">
                     <div class="portfolio-item position-relative overflow-hidden rounded shadow-sm">
-                        <img src="pexels-designecologist-1779487.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 2">
+                        <img src="7144898_3569112.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 2">
                     </div>
                 </div>
                  <div class="col-md-6 col-lg-4 animate-stagger animate-zoom-in">
                     <div class="portfolio-item position-relative overflow-hidden rounded shadow-sm">
-                        <img src="antonio-cerbino-xx3FhP88o5Q-unsplash.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 3">
+                        <img src="7436705_3562984.jpg" class="one img-fluid portfolio-image" alt="Portfolio Item 3">
                     </div>
                 </div>
             </div><br><br>
             <div class="row g-4 justify-content-center" data-stagger-children data-stagger-delay="100" style="transition-delay: 300ms;">
                  <div class="col-md-6 col-lg-4 animate-stagger animate-zoom-in">
                      <div class="portfolio-item position-relative overflow-hidden rounded shadow-sm">
-                        <img src="pexels-shkrabaanthony-5475779.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 4">
+                        <img src="9387683_4150802.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 4">
                      </div>
                  </div>
                  <div class="col-md-6 col-lg-4 animate-stagger animate-zoom-in">
                     <div class="portfolio-item position-relative overflow-hidden rounded shadow-sm">
-                        <img src="team-nocoloco-aFbs3cwlpZI-unsplash.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 5">
+                        <img src="12983671_5123363.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 5">
                     </div>
                  </div>
                  <div class="col-md-6 col-lg-4 animate-stagger animate-zoom-in">
                     <div class="portfolio-item position-relative overflow-hidden rounded shadow-sm">
-                        <img src="safar-safarov-LKsHwgzyk7c-unsplash.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 6">
+                        <img src="12984309_5078803.jpg" class="img-fluid portfolio-image" alt="Portfolio Item 6">
                     </div>
                  </div>
             </div>
         </div>
     </section>
 
-    <!-- Video CTA Section -->
-    <section class="video-cta-section position-relative text-center text-white d-flex align-items-center justify-content-center">
-        <div class="video-overlay position-absolute top-0 start-0 w-100 h-100"></div>
-        <div class="video-content position-relative" style="z-index: 2;">
-            <div class="container">
-                <a href="#" class="play-button d-inline-flex align-items-center justify-content-center rounded-circle bg-white mb-4 animate-on-scroll animate-scale-up" data-bs-toggle="modal" data-bs-target="#videoModal">
-                    <i class="bi bi-play-fill"></i>
-                </a>
-                <h2 class="display-6 fw-bold mb-4 animate-on-scroll animate-fade-in" style="transition-delay: 150ms;">
-                    I am delivering beautiful professional<br>projects for my clients
-                </h2>
-                <a href="#" class="btn btn-watch-video btn-light rounded-pill fw-medium px-4 py-2 animate-on-scroll animate-fade-in" style="transition-delay: 300ms;" data-bs-toggle="modal" data-bs-target="#videoModal">
-                    Watch Video
-                </a>
+    <!-- =================================== -->
+    <!-- == NEW Features Section Replaces Video CTA == -->
+    <!-- =================================== -->
+       <!-- Features Section Updated -->
+       <section id="features" class="features-section py-5 bg-light">
+        <div class="container">
+
+            <div class="row mb-5 justify-content-center text-center">
+                <div class="col-lg-8">
+                    <p class="features-label text-uppercase fw-bold mb-2 animate-on-scroll animate-slide-up">Features & Skills</p>
+                    <h2 class="fw-bold mb-0 position-relative d-inline-block animate-on-scroll animate-slide-up" style="transition-delay: 100ms;">
+                        Technologies I Work With
+                    </h2> 
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center" data-stagger-children data-stagger-delay="100">
+
+                <!-- Feature 1: HTML -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                      
+                        <i class="fa-brands fa-html5 feature-icon mb-3"></i>
+                        <h6 class="fw-bold mb-0">HTML</h6>
+                    </div>
+                </div>
+
+                <!-- Feature 2: CSS -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                        
+                        <i class="fa-brands fa-css3-alt feature-icon mb-3"></i>
+                        <h6 class="fw-bold mb-0">CSS</h6>
+                    </div>
+                </div>
+
+                <!-- Feature 3: JS -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                     
+                        <i class="fa-brands fa-js feature-icon mb-3"></i>
+                        <h6 class="fw-bold mb-0">JavaScript</h6>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Node JS -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                       
+                        <i class="fa-brands fa-node-js feature-icon mb-3"></i>
+                        <h6 class="fw-bold mb-0">Node.js</h6> 
+                    </div>
+                </div>
+
+                <!-- Feature 5: PHP -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                      
+                        <i class="fa-brands fa-php feature-icon mb-3"></i>
+                        <h6 class="fw-bold mb-0">PHP</h6>
+                    </div>
+                </div>
+
+                <!-- Feature 6: Figma -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                  
+                       <i class="fa-brands fa-figma feature-icon mb-3"></i>
+                       <h6 class="fw-bold mb-0">Figma</h6>
+                    </div>
+                </div>
+
+                <!-- Feature 7: Bootstrap 5 -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                     
+                        <i class="bi bi-bootstrap feature-icon mb-3"></i>
+                        <h6 class="fw-bold mb-0">Bootstrap 5</h6>
+                    </div>
+                </div>
+
+                <!-- Feature 8: React -->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 animate-stagger animate-scale-up">
+                    <div class="feature-card text-center p-4 bg-white rounded shadow-sm h-100">
+                      
+                       <i class="fa-brands fa-react feature-icon mb-3"></i>
+                       <h6 class="fw-bold mb-0">React</h6>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+    <!-- =================================== -->
+    <!-- == End of NEW Features Section == -->
+    <!-- =================================== -->
 
-    <!-- Video Modal -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content bg-transparent border-0">
-          <div class="modal-header border-0">
-             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <!-- ** IMPORTANT: Replace VIDEO_ID_HERE with your actual YouTube video ID! ** -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Testimonials Marquee Section -->
     <section class="testimonials-section py-5 position-relative overflow-hidden bg-white">
@@ -266,7 +342,6 @@
             <div class="marquee-container mt-n3 mt-md-n4">
                 <marquee behavior="scroll" direction="left" scrollamount="8" class="web-dev-marquee">
                     <span class="marquee-text">Hi, I'm a professional Web Developer passionate about creating engaging and effective websites... Ready to start your next web project? Let's connect!</span>
-                    <!-- Repeat span if needed for longer marquee -->
                     <span class="marquee-text">Hi, I'm a professional Web Developer passionate about creating engaging and effective websites... Ready to start your next web project? Let's connect!</span>
                 </marquee>
             </div>
@@ -402,23 +477,15 @@
                 </div>
                 <div class="col-lg-6 mine animate-on-scroll animate-slide-left" style="transition-delay: 200ms;">
                     <div class="map-placeholder bg-light rounded p-3 p-md-4 d-flex flex-column align-items-center justify-content-center text-center h-100">
-                        <!-- Google Maps Embed for Okara, Punjab -->
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109388.9167823882!2d73.38159991448864!3d30.79984190354148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392205f0d7413131%3A0x8e7d5a464d1f5a96!2sOkara%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1716300000000!5m2!1sen!2sus"  /* NOTE: Replace '...' part and timestamp 'v=...' with the latest code from Google Maps if needed */
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109388.9167823882!2d73.38159991448864!3d30.79984190354148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392205f0d7413131%3A0x8e7d5a464d1f5a96!2sOkara%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1716300000000!5m2!1sen!2sus"
                             width="100%"
                             height="350"
-                            style="border:0; border-radius: 0.75rem;" 
+                            style="border:0; border-radius: 0.75rem;"
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                        <!-- Your commented-out error message - keep it if you want fallback content -->
-                        <!--
-                         <i class="bi bi-exclamation-circle-fill map-error-icon mb-3"></i>
-                         <h5 class="mb-2">Oops! Something went wrong.</h5>
-                         ma okara punjab ka rhany wala hon waha ke es ma location add kro or wo screen per nazer ay
-                         <p class="map-error-text text-muted small mb-0">Map could not be loaded.</p>
-                         -->
                     </div>
                 </div>
             </div>
@@ -430,209 +497,218 @@
         <div class="container">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <div class="text-center text-md-start mb-3 mb-md-0">
-                    <small class="copyright-text">Copyright © 2024 Z M W. All rights reserved</small> <!-- Updated Year -->
+                    <small class="copyright-text">Copyright © 2024 Z M W. All rights reserved</small>
                 </div>
                 <div class="social-icons text-center text-md-end">
                     <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1653377901&extra_1=s%7Cc%7C515904696719%7Ce%7Cfacebook%27%7C&placement=&creative=515904696719&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1653377901%26adgroupid%3D65139789042%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D9060972%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gbraid=0AAAAAD2MkOX4hb_K-809NceW_C1OCNjFJ&gclid=CjwKCAjwq7fABhB2EiwAwk-YbAE6wwSDjrHh_S0ATC02E73032Ul2uEjlBrDqSODQk7hkttntNw4vxoCwukQAvD_BwE" aria-label="Facebook" class="social-icon-link me-3"><i class="bi bi-facebook"></i></a>
-                    <a href="https://twitter.com/" aria-label="Twitter" class="social-icon-link me-3"><i class="bi bi-twitter-x"></i></a> <!-- Updated Twitter icon -->
+                    <a href="https://twitter.com/" aria-label="Twitter" class="social-icon-link me-3"><i class="bi bi-twitter-x"></i></a>
                     <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icon-link me-3"><i class="bi bi-instagram"></i></a>
                     <a href="https://dribble.com/" aria-label="Dribbble" class="social-icon-link me-3"><i class="bi bi-dribbble"></i></a>
-                    <a href="https://github.com/" aria-label="GitHub" class="social-icon-link"><i class="bi bi-github"></i></a> <!-- Example: GitHub -->
+                    <a href="https://github.com/" aria-label="GitHub" class="social-icon-link"><i class="bi bi-github"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-        <!-- Chatbot Toggle Button -->
-        <div class="floating-icon chatbot-toggler" id="chatbot-toggle">
-            <i class="bi bi-chat-dots-fill"></i> <!-- Or use bi-chat-right-text-fill -->
+    <!-- Chatbot & WhatsApp Icons -->
+    <div class="floating-icon chatbot-toggler" id="chatbot-toggle">
+        <i class="bi bi-chat-dots-fill"></i>
+    </div>
+    <div class="floating-icon whatsapp-icon">
+        <a href="https://wa.me/923440740774" target="_blank" aria-label="Chat on WhatsApp">
+           <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+    <!-- Chatbot Window -->
+    <div class="chatbot-window shadow" id="chatbot-window">
+        <div class="chatbot-header d-flex justify-content-between align-items-center p-3">
+            <h5 class="mb-0 text-white fw-bold">Chat with Us</h5>
+            <button type="button" class="btn-close btn-close-white" aria-label="Close" id="chatbot-close"></button>
         </div>
-    
-        <!-- Chatbot Window -->
-        <div class="chatbot-window shadow" id="chatbot-window">
-            <!-- Header -->
-            <div class="chatbot-header d-flex justify-content-between align-items-center p-3">
-                <h5 class="mb-0 text-white fw-bold">Chat with Us</h5>
-                <button type="button" class="btn-close btn-close-white" aria-label="Close" id="chatbot-close"></button>
-            </div>
-    
-            <!-- Messages Area -->
-            <div class="chatbot-messages p-3" id="chatbot-messages">
-                <!-- Bot Welcome Message -->
-                <div class="message bot-message mb-2">
-                    <span>Hello! 👋 How can I help you today? Ask about services, portfolio, or contact info!</span>
-                </div>
-                <!-- Messages will be added here by JS -->
-            </div>
-    
-            <!-- Input Area -->
-            <div class="chatbot-input-area p-3 border-top">
-                <form id="chatbot-form" class="d-flex">
-                    <input type="text" id="chatbot-input" class="form-control form-control-sm me-2" placeholder="Type your message..." autocomplete="off" required>
-                    <button type="submit" class="btn btn-send btn-sm rounded-circle">
-                        <i class="bi bi-send-fill"></i>
-                    </button>
-                </form>
+        <div class="chatbot-messages p-3" id="chatbot-messages">
+            <div class="message bot-message mb-2">
+                <span>Hello! 👋 How can I help you today? Ask about services, portfolio, or contact info!</span>
             </div>
         </div>
-    
-        <!-- KEEP Your Existing WhatsApp Icon -->
-        <div class="floating-icon whatsapp-icon">
-            <a href="https://wa.me/923440740774" target="_blank" aria-label="Chat on WhatsApp">
-               <i class="bi bi-whatsapp"></i>
-            </a>
+        <div class="chatbot-input-area p-3 border-top">
+            <form id="chatbot-form" class="d-flex">
+                <input type="text" id="chatbot-input" class="form-control form-control-sm me-2" placeholder="Type your message..." autocomplete="off" required>
+                <button type="submit" class="btn btn-send btn-sm rounded-circle">
+                    <i class="bi bi-send-fill"></i>
+                </button>
+            </form>
         </div>
-        <!-- End Floating Icons -->
+    </div>
+    <!-- End Floating Icons Area -->
 
-    <!-- JavaScript for Animations (Intersection Observer) -->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Your Custom JS for animations, chatbot, counters etc. -->
+ 
+     <script src="scripts.js"></script> 
+
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        // PASTE ALL YOUR PREVIOUS JAVASCRIPT CODE HERE
+        // (Intersection observer, chatbot logic, counter animation)
+        document.addEventListener("DOMContentLoaded", () => {
+
+            // --- Intersection Observer Setup ---
             const animationOptions = {
-                rootMargin: '0px 0px -10% 0px', // Start animation a bit before element is fully visible
-                threshold: 0.1 // Trigger when 10% of the element is visible
+                rootMargin: '0px 0px -10% 0px',
+                threshold: 0.1
             };
 
-            const observer = new IntersectionObserver((entries, observer) => {
+            const animationObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-
-                        // Specific animation for progress bars
-                        if (entry.target.classList.contains('progress-bar-animation')) {
-                            const progressBar = entry.target.querySelector('.progress-bar');
-                            if (progressBar) {
-                                const targetWidth = progressBar.getAttribute('aria-valuenow');
-                                progressBar.style.width = targetWidth + '%';
-                            }
-                        }
-
-                        observer.unobserve(entry.target); // Animate only once
+                        observer.unobserve(entry.target);
                     }
                 });
             }, animationOptions);
 
-            // Select elements to animate directly
+            // Observe direct animation elements
             const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
             elementsToAnimate.forEach(el => {
-                observer.observe(el);
+                animationObserver.observe(el);
             });
 
-            // Select elements for staggered animation
+            // Observe staggered animation children
             const staggerGroups = document.querySelectorAll('[data-stagger-children]');
             staggerGroups.forEach(group => {
                 const children = group.querySelectorAll('.animate-stagger');
-                const delayIncrement = parseInt(group.getAttribute('data-stagger-delay') || '100'); // ms delay
+                const delayIncrement = parseInt(group.getAttribute('data-stagger-delay') || '100');
                 children.forEach((child, index) => {
-                    observer.observe(child); // Observe each child individually
-                    child.style.transitionDelay = `${index * delayIncrement}ms`; // Apply delay based on index
+                    child.style.transitionDelay = `${index * delayIncrement}ms`;
+                    animationObserver.observe(child);
                 });
             });
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
+
+             // --- Counter & Progress Bar Animation Setup ---
+            const counters = document.querySelectorAll('.count-up');
+            const counterAnimationDuration = 1500; // Duration in milliseconds
+
+            const animateCounter = (element, targetValue) => {
+                let startTime = null;
+                const step = (timestamp) => {
+                    if (!startTime) startTime = timestamp;
+                    const progress = Math.min((timestamp - startTime) / counterAnimationDuration, 1);
+                    const currentCount = Math.floor(progress * targetValue);
+                    element.textContent = currentCount + '%';
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        element.textContent = targetValue + '%';
+                    }
+                };
+                window.requestAnimationFrame(step);
+            };
+
+            const animateProgressBar = (progressBarElement, targetValue) => {
+                progressBarElement.style.transition = `width ${counterAnimationDuration}ms ease-out`;
+                setTimeout(() => {
+                    progressBarElement.style.width = targetValue + '%';
+                }, 10);
+            };
+
+            const counterObserverOptions = { threshold: 0.1 };
+            const counterObserverCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counterElement = entry.target;
+                        const target = parseInt(counterElement.getAttribute('data-target'), 10);
+                        const skillItem = counterElement.closest('.skill-item');
+                        const progressBar = skillItem ? skillItem.querySelector('.progress-bar') : null;
+
+                        animateCounter(counterElement, target);
+                        if (progressBar) {
+                            animateProgressBar(progressBar, target);
+                        }
+                        observer.unobserve(counterElement);
+                    }
+                });
+            };
+            const counterObserver = new IntersectionObserver(counterObserverCallback, counterObserverOptions);
+            counters.forEach(counter => {
+                counterObserver.observe(counter);
+            });
+
+
+            // --- Chatbot Logic ---
             const chatbotToggle = document.getElementById('chatbot-toggle');
             const chatbotWindow = document.getElementById('chatbot-window');
             const chatbotClose = document.getElementById('chatbot-close');
             const chatbotMessages = document.getElementById('chatbot-messages');
             const chatbotForm = document.getElementById('chatbot-form');
             const chatbotInput = document.getElementById('chatbot-input');
-        
-            // --- Toggle Chat Window ---
-            chatbotToggle.addEventListener('click', () => {
-                chatbotWindow.classList.toggle('show');
-                // Focus input when opening
-                if (chatbotWindow.classList.contains('show')) {
-                   setTimeout(() => chatbotInput.focus(), 300); // Delay allows transition
-                   scrollToBottom();
-                }
-            });
-        
-            // --- Close Chat Window ---
-            chatbotClose.addEventListener('click', () => {
-                chatbotWindow.classList.remove('show');
-            });
-        
-            // --- Handle Form Submission ---
-            chatbotForm.addEventListener('submit', function(event) {
-                event.preventDefault(); // Prevent page reload
-                const userMessage = chatbotInput.value.trim();
-        
-                if (userMessage) {
-                    displayMessage(userMessage, 'user');
-                    chatbotInput.value = ''; // Clear input field
-                    sendToBot(userMessage);
-                }
-            });
-        
-            // --- Display Messages ---
-            function displayMessage(message, sender) {
-                const messageElement = document.createElement('div');
-                messageElement.classList.add('message', sender + '-message', 'mb-2');
-                const span = document.createElement('span');
-                span.textContent = message;
-                messageElement.appendChild(span);
-                chatbotMessages.appendChild(messageElement);
-                scrollToBottom();
-            }
-        
-            // --- Scroll to Bottom ---
-            function scrollToBottom() {
-                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
-            }
-        
-            // --- Simple Bot Logic ---
-            function sendToBot(userInput) {
-                const botResponse = getBotResponse(userInput);
-        
-                // Simulate bot thinking time
-                setTimeout(() => {
-                    displayMessage(botResponse, 'bot');
-                }, 600 + Math.random() * 400); // Delay 600-1000ms
-            }
-        
-            function getBotResponse(input) {
-                const lowerInput = input.toLowerCase();
-        
-                // Basic Keywords & Responses
-                if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) {
-                    return "Hello there! How can I assist you today?";
-                }
-                if (lowerInput.includes('services') || lowerInput.includes('offer')) {
-                    return "I offer a full cycle of Web Development services including Design, Development, Maintenance, and Quality Assurance. Check the 'Services' section for more details!";
-                }
-                if (lowerInput.includes('portfolio') || lowerInput.includes('work') || lowerInput.includes('projects')) {
-                    return "You can view examples of my past projects in the 'Portfolio' section.";
-                }
-                 if (lowerInput.includes('about') || lowerInput.includes('who are you')) {
-                    return "I am a Senior Designer & Developer based in NYC. You can learn more in the 'About Me' section.";
-                }
-                 if (lowerInput.includes('contact') || lowerInput.includes('phone') || lowerInput.includes('email') || lowerInput.includes('location')) {
-                    return "My contact details (Phone, Email, Location) are available in the 'Contact' section at the bottom of the page.";
-                }
-                if (lowerInput.includes('price') || lowerInput.includes('cost') || lowerInput.includes('quote')) {
-                    return "Project costs vary based on requirements. Please use the contact form or details to get in touch for a personalized quote.";
-                }
-                 if (lowerInput.includes('cv') || lowerInput.includes('resume')) {
-                    return "You can download my CV from the 'About Me' section.";
-                }
-                if (lowerInput.includes('thanks') || lowerInput.includes('thank you')) {
-                    return "You're welcome! Let me know if you need anything else.";
-                }
-                if (lowerInput.includes('bye') || lowerInput.includes('goodbye')) {
-                    return "Goodbye! Have a great day.";
-                }
-        
-                // Fallback Response
-                return "Sorry, I'm just a simple bot. I didn't quite get that. Try asking about 'services', 'portfolio', 'contact', or 'about me'.";
-            }
-        
-            // Initial scroll to bottom in case of pre-filled messages
-            scrollToBottom();
-        });
-        </script>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            if (chatbotToggle && chatbotWindow && chatbotClose && chatbotMessages && chatbotForm && chatbotInput) { // Check if elements exist
+                chatbotToggle.addEventListener('click', () => {
+                    chatbotWindow.classList.toggle('show');
+                    if (chatbotWindow.classList.contains('show')) {
+                       setTimeout(() => chatbotInput.focus(), 300);
+                       scrollToBottom();
+                    }
+                });
+
+                chatbotClose.addEventListener('click', () => {
+                    chatbotWindow.classList.remove('show');
+                });
+
+                chatbotForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const userMessage = chatbotInput.value.trim();
+                    if (userMessage) {
+                        displayMessage(userMessage, 'user');
+                        chatbotInput.value = '';
+                        sendToBot(userMessage);
+                    }
+                });
+
+                function displayMessage(message, sender) {
+                    const messageElement = document.createElement('div');
+                    messageElement.classList.add('message', sender + '-message', 'mb-2');
+                    const span = document.createElement('span');
+                    span.textContent = message;
+                    messageElement.appendChild(span);
+                    chatbotMessages.appendChild(messageElement);
+                    scrollToBottom();
+                }
+
+                function scrollToBottom() {
+                    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+                }
+
+                function sendToBot(userInput) {
+                    const botResponse = getBotResponse(userInput);
+                    setTimeout(() => {
+                        displayMessage(botResponse, 'bot');
+                    }, 600 + Math.random() * 400);
+                }
+
+                function getBotResponse(input) {
+                    const lowerInput = input.toLowerCase();
+                    // (Keep your existing bot responses here)
+                     if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) { return "Hello there! How can I assist you today?"; }
+                     if (lowerInput.includes('services') || lowerInput.includes('offer')) { return "I offer a full cycle of Web Development services including Design, Development, Maintenance, and Quality Assurance. Check the 'Services' or 'Features' section for more details!"; }
+                     if (lowerInput.includes('features')) { return "Key features include Full Customization, User-Friendly interfaces, Responsive Design, Clean Code, Google Fonts, Good Documentation, Bootstrap 5 integration, and Modern Design aesthetics. See the 'Features' section!"; }
+                     if (lowerInput.includes('portfolio') || lowerInput.includes('work') || lowerInput.includes('projects')) { return "You can view examples of my past projects in the 'Portfolio' section."; }
+                     if (lowerInput.includes('about') || lowerInput.includes('who are you')) { return "I am a Senior Designer & Developer based in NYC. You can learn more in the 'About Me' section."; }
+                     if (lowerInput.includes('contact') || lowerInput.includes('phone') || lowerInput.includes('email') || lowerInput.includes('location')) { return "My contact details (Phone, Email, Location) are available in the 'Contact' section at the bottom of the page."; }
+                     if (lowerInput.includes('price') || lowerInput.includes('cost') || lowerInput.includes('quote')) { return "Project costs vary based on requirements. Please use the contact form or details to get in touch for a personalized quote."; }
+                     if (lowerInput.includes('cv') || lowerInput.includes('resume')) { return "You can download my CV from the 'About Me' section."; }
+                     if (lowerInput.includes('thanks') || lowerInput.includes('thank you')) { return "You're welcome! Let me know if you need anything else."; }
+                     if (lowerInput.includes('bye') || lowerInput.includes('goodbye')) { return "Goodbye! Have a great day."; }
+                     return "Sorry, I'm just a simple bot. Try asking about 'services', 'features', 'portfolio', 'contact', or 'about me'.";
+                }
+                scrollToBottom(); // Initial scroll if needed
+            } else {
+                console.warn("Chatbot elements not found. Chatbot functionality disabled.");
+            }
+
+        });
+    </script>
+
 </body>
 </html>
